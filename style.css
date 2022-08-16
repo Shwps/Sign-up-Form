@@ -1,0 +1,41 @@
+* {
+    color:white;
+}
+
+body {
+   padding: 0%;
+   margin: 0%;
+}
+
+.greatercon{
+    display: flex;
+}
+.bg-img{
+    width: auto;
+    height: 100vh;
+
+}
+
+.form-con{
+    display:flex;
+    flex-direction: column;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    justify-content: center;
+    background-color: rgb(93, 70, 158);
+}
+
+#sign-up > fieldset{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    
+}
+
+.inputCon {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputCon > input {
+    max-width: 10rem;
+}
