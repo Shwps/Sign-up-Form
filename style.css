@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
 * {
-    color:white;
+    font-family:Oswald;
 }
 
 body {
@@ -13,29 +15,63 @@ body {
 .bg-img{
     width: auto;
     height: 100vh;
-
 }
 
 .form-con{
     display:flex;
     flex-direction: column;
-    margin-left: 5rem;
-    margin-right: 5rem;
     justify-content: center;
-    background-color: rgb(93, 70, 158);
+    background-color: rgb(255, 255, 255);
 }
 
-#sign-up > fieldset{
+
+
+#sign-up > #allInputs{
     display:grid;
     grid-template-columns: 1fr 1fr;
     
+    
+}
+
+#sign-up {
+    padding-left:2rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 1px 1px 3px black;
+    width:100%;
+}
+
+.inputField {
+    box-sizing: border-box;
+    border: none;
+    appearance: none;
+    background:#f2f2f2;
+    padding: 12px;
+    border-radius: 3px;
+    width:250px;
+
+  }
+
+ 
+
+#description{
+    padding-left: 2rem;
+    padding-bottom: 5rem;
+
 }
 
 .inputCon {
     display: flex;
     flex-direction: column;
+    margin:10px;
 }
 
-.inputCon > input {
-    max-width: 10rem;
+button {
+    display:inline-block;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-weight: 300;
+    border:2px solid rgb(37, 56, 25);
+    border-radius: 1em;
+    padding:6px 50px;
+
 }
