@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@300&display=swap');
 * {
     font-family:Oswald;
 }
@@ -7,36 +6,60 @@
 body {
    padding: 0%;
    margin: 0%;
+   background-color: #F1FAEE;
 }
 
 .greatercon{
     display: flex;
 }
-.bg-img{
-    width: auto;
+.bg-img-con{
+    width: 30vw;
     height: 100vh;
+    background: url("zach-plank.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-con {
+    background-color: rgba(9, 17, 27, 0.466);
+    display: block;
+    width:100%;
+    display:flex;
+    position: relative;
+    padding: 16px;
+    gap:16px;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo-text {
+    color:white;
+    font-family:Abril Fatface;
+    font-size: 36px;
 }
 
 .form-con{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    background-color: rgb(255, 255, 255);
+    background-color: #F1FAEE;
 }
 
 
 
-#sign-up > #allInputs{
+
+#allInputs{
     display:grid;
     grid-template-columns: 1fr 1fr;
-    
-    
+    width: 800px;
 }
 
 #sign-up {
     padding-left:2rem;
-    background-color: rgb(255, 255, 255);
-    box-shadow: 1px 1px 3px black;
+    background-color:#F1FAEE;
     width:100%;
 }
 
@@ -46,9 +69,14 @@ body {
     appearance: none;
     background:#f2f2f2;
     padding: 12px;
-    border-radius: 3px;
+    border-radius: 6px;
     width:250px;
 
+
+  }
+
+  #sign-up-footer {
+    padding:2rem;
   }
 
  
@@ -56,13 +84,14 @@ body {
 #description{
     padding-left: 2rem;
     padding-bottom: 5rem;
+    width: 800px;
 
 }
 
 .inputCon {
     display: flex;
     flex-direction: column;
-    margin:10px;
+    margin:10px 10px 10px 0px;
 }
 
 button {
@@ -70,8 +99,23 @@ button {
     box-sizing: border-box;
     text-decoration:none;
     font-weight: 300;
-    border:2px solid rgb(37, 56, 25);
-    border-radius: 1em;
-    padding:6px 50px;
+    background-color: #A8DADC;
+    border:0px solid rgb(255, 255, 255);
+    border-radius: 6px;
+    padding:16px 80px;
+    margin-bottom: 30px;
 
 }
+
+h1{
+    color: #1D3557;
+}
+
+p{
+    color: #1D3557; 
+}
+
+label{
+    color:#457B9D;
+}
+
