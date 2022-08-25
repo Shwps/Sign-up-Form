@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
   </head>
   <body>
     <div class="greatercon">
@@ -19,49 +20,52 @@
       <div class="form-con">
         <div id="description">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-            minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex ea commodo consequat. Duis aute irure dolor in
-            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            Are you ready to start your academic carrer as a Witch or Wizard?
+          </p>
+
+          <p>
+            Fill out the following form to get access to the school online platform
+            where you can see this semster's curricula and say hi to your professors
+            and peers.
           </p>
         </div>
 
         <form id="sign-up" action="">
-          <h1>Welcome to Wizardry School</h1>
+          <h1>Welcome to Wizardry School!</h1>
 
           <div id="allInputs">
             <div class="inputCon">
               <label for="firstName">First Name</label>
-              <input type="text" id="firstName" class="inputField" />
+              <input type="text" id="firstName" class="inputField" name="firstName" maxlength="30"/>
             </div>
             <div class="inputCon">
               <label for="lastName">Last Name</label>
-              <input type="text" id="lastName" class="inputField" />
+              <input type="text" id="lastName" class="inputField" name="lastName" maxlength="40"/>
             </div>
             <div class="inputCon">
               <label for="email">Email</label>
-              <input type="email" id="email" class="inputField" />
+              <input type="email" id="email" class="inputField" name="email"maxlength="80"/>
             </div>
             <div class="inputCon">
               <label for="phoneNum">Phone Number</label>
-              <input type="tel" id="phoneNum" class="inputField" />
+              <input type="tel" id="phoneNum" class="inputField" name="phoneNum" maxlength="16"/>
             </div>
             <div class="inputCon">
               <label for="pw">Password</label>
-              <input type="password" id="pw" class="inputField" />
+              <input type="password" id="pw" class="inputField" name="password" maxlength="8" maxlength="60"/>
             </div>
             <div class="inputCon">
               <label for="cpw">Confirm Password</label>
-              <input type="password" id="cpw" class="inputField" />
+              <input type="password" id="cpw" class="inputField" name="passwordConfirmation" maxlength="8" maxlength="60"/>
             </div>
           </div>
         </form>
         <div id="sign-up-footer">
           <button type="submit" form="sign=up">Enroll</button>
-          <div>Already enrolled?</div>
+          <div id="sign-in-box">
+            <div>Already enrolled?</div>
+            <a href="">Sign in</a>
+          </div>
         </div>
       </div>
     </div>
