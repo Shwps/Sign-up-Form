@@ -1,150 +1,152 @@
-@import url('https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@300&display=swap");
 * {
-    font-family:Oswald;
+  font-family: Oswald;
 }
 
 body {
-   padding: 0%;
-   margin: 0%;
-   background-color: #F1FAEE;
+  padding: 0%;
+  margin: 0%;
+  background-color: #f1faee;
 }
 
-a{
-    text-decoration: none;
-    color:rgb(4, 53, 4);
+a {
+  text-decoration: none;
+  color: rgb(4, 53, 4);
 }
 
-.greatercon{
-    display: flex;
+.greatercon {
+  display: flex;
 }
-.bg-img-con{
-    width: 30vw;
-    height: 100vh;
-    background: url("zach-plank.jpg");
-    background-size:cover;
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.bg-img-con {
+  width: 30vw;
+  height: 100vh;
+  background: url("zach-plank.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-con {
-    background-color: rgba(9, 17, 27, 0.466);
-    display: block;
-    width:100%;
-    min-width: 30vw;
-    display:flex;
-    padding: 16px;
-    gap:16px;
-    justify-content: center;
-    align-items: center;
+  background-color: rgba(9, 17, 27, 0.466);
+  display: block;
+  width: 100%;
+  min-width: 30vw;
+  display: flex;
+  padding: 16px;
+  gap: 16px;
+  justify-content: center;
+  align-items: center;
 }
 
 #logo-text {
-    color:white;
-    font-family:Aboreto;
-    font-size: 30px;
+  color: white;
+  font-family: Aboreto;
+  font-size: 30px;
 }
 
-.form-con{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    background-color: #F1FAEE;
+.form-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #f1faee;
 }
 
-
-
-
-#allInputs{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    width: 800px;
+#allInputs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 800px;
 }
 
 #sign-up {
-    padding-left:2rem;
-    background-color:#F1FAEE;
-    width:100%;
+  padding-left: 2rem;
+  background-color: #f1faee;
+  width: 100%;
 }
 
 .inputField {
-    box-sizing: border-box;
-    border: none;
-    appearance: none;
-    background:#eceeec;
-    border: solid 2px #b5b6b6;
-    padding: 12px;
-    border-radius: 6px;
-    width:250px;
-    outline: none;
-  }
+  box-sizing: border-box;
+  border: none;
+  appearance: none;
+  background: #eceeec;
+  border: solid 2px #b5b6b6;
+  padding: 12px;
+  border-radius: 6px;
+  width: 250px;
+  outline: none;
+}
 
-  .inputField:focus {
-    box-sizing: border-box;
-    border: none;
-    appearance: none;
-    background:#eceeec;
-    border: solid 2px #8190e6;
-    padding: 12px;
-    border-radius: 6px;
-    width:250px;
-  }
+.inputField:focus {
+  box-sizing: border-box;
+  border: none;
+  appearance: none;
+  background: #eceeec;
+  border: solid 2px #8190e6;
+  padding: 12px;
+  border-radius: 6px;
+  width: 250px;
+}
 
+.inputField:invalid {
+  border: solid 2px #fd0000;
+}
 
-  .inputField:invalid{
-    border: solid 2px #fd0000;
-  }
+.errorCon {
+    height:60px;
+    padding: 4px;
+}
 
+.errorCon > * {
+    color: red;
+    font-size: 14px;
+    margin: 0px;
 
-  
-  #sign-up-footer {
-    padding:2rem;
-  }
+}
 
- 
+#sign-up-footer {
+  padding: 2rem;
+}
 
-#description{
-    padding-left: 2rem;
-    padding-bottom: 5rem;
-    width: 600px;
-
+#description {
+  padding-left: 2rem;
+  padding-bottom: 5rem;
+  width: 600px;
 }
 
 #sign-in-box {
-    display: flex;
-    gap:4px;
+  display: flex;
+  gap: 4px;
 }
 
 .inputCon {
-    display: flex;
-    flex-direction: column;
-    margin:10px 10px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  margin: 10px 10px 10px 0px;
 }
 
 button {
-    display:inline-block;
-    box-sizing: border-box;
-    text-decoration:none;
-    font-weight: 300;
-    font-size: 16px;
-    background-color: #183a69;
-    color:white;
-    border:0px solid rgb(255, 255, 255);
-    border-radius: 6px;
-    padding:16px 80px;
-    margin-bottom: 30px;
+  display: inline-block;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #183a69;
+  color: white;
+  border: 0px solid rgb(255, 255, 255);
+  border-radius: 6px;
+  padding: 16px 80px;
+  margin-bottom: 30px;
 }
 
-h1{
-    color: #1D3557;
+h1 {
+  color: #1d3557;
 }
 
-p{
-    color: #1D3557; 
+p {
+  color: #1d3557;
 }
 
-label{
-    color:#457B9D;
+label {
+  color: #457b9d;
 }
-

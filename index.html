@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign-up Form</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
   </head>
   <body>
     <div class="greatercon">
@@ -52,11 +52,12 @@
             </div>
             <div class="inputCon">
               <label for="pw">Password</label>
-              <input type="password" id="pw" class="inputField" name="password" maxlength="8" maxlength="60"/>
+              <input type="password" id="pw" class="inputField" name="password" minlength="8" maxlength="60"/>
+              <div class="errorCon"></div>
             </div>
             <div class="inputCon">
               <label for="cpw">Confirm Password</label>
-              <input type="password" id="cpw" class="inputField" name="passwordConfirmation" maxlength="8" maxlength="60"/>
+              <input type="password" id="cpw" class="inputField" name="passwordConfirmation" minlength="8" maxlength="60"/>
             </div>
           </div>
         </form>
