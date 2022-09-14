@@ -23,17 +23,23 @@ LengthErrorMsg.appendChild(LengthErrorNode);
 
 password.addEventListener("input", () => {
   if (uppercaseValidation()) {
-    errorCon.removeChild(UpperErrorMsg);
+    if (Array.from(errorCon.childNodes).includes(UpperErrorMsg)) {
+      errorCon.removeChild(UpperErrorMsg);
+    }
   } else {
     errorCon.appendChild(UpperErrorMsg);
   }
   if (containsNumber()) {
-    errorCon.removeChild(NumErrorMsg);
+    if (Array.from(errorCon.childNodes).includes(NumErrorMsg)) {
+      errorCon.removeChild(NumErrorMsg);
+    }
   } else {
     errorCon.appendChild(NumErrorMsg);
   }
   if (lengthValidation()) {
-    errorCon.removeChild(LengthErrorMsg);
+    if (Array.from(errorCon.childNodes).includes(LengthErrorMsg)) {
+      errorCon.removeChild(LengthErrorMsg);
+    }
   } else {
     errorCon.appendChild(LengthErrorMsg);
   }
